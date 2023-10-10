@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src='web/vuetext.js'></script>
+    <script src="vuetext.js"></script>
 </head>
 <body>
-    <div style="color:rgb(190, 50, 50);">Hello Git</div>
-    <div id="container" style="width: 30px; height: 90px; color:white;float: left;"></div>
-    <div>哈哈</div>
-    <div>hhh</div>
+    <div id ="app">{{message}}</div>
 </body>
+<script>
+    var vm = new Vue({
+        al:"#app",
+        data:{
+            message:"hello vue!"
+        }
+    })
+</script>
 </html>
